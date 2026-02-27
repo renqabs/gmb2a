@@ -552,7 +552,7 @@ watch(settings, (value) => {
   next.basic.cfmail_domain = typeof next.basic.cfmail_domain === 'string'
     ? next.basic.cfmail_domain
     : ''
-  next.retry = next.retry || {}{}
+  next.retry = next.retry || {}
   next.retry.auto_refresh_accounts_seconds = Number.isFinite(next.retry.auto_refresh_accounts_seconds)
     ? next.retry.auto_refresh_accounts_seconds
     : 60
